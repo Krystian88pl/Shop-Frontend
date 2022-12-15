@@ -9,22 +9,18 @@ import { LoginComponent } from './modules/login/login.component';
 import { ProductComponent } from './modules/product/product.component';
 
 const routes: Routes = [
-  {
-    path:'', component: DefaultComponent, children: [
-      {path: '', component: HomeComponent},
-      {path: 'products', component: ProductComponent}
-    ]
-  },
-  {
-    path:'', component: FullpageComponent, children: [
-      {path: 'login', component: LoginComponent}
-    ]
-  },
-  {
-    path:'', component: FullpageadminComponent, children: [
-      {path: 'admin', component: AdminComponent}
-    ]
-  }
+    {
+      path:'', component: DefaultComponent, children: [
+        {path: '', component: HomeComponent},
+        {path: 'products', component: ProductComponent},
+        {path: 'login', component: LoginComponent}
+      ]
+    },
+    {
+      path:'', component: FullpageadminComponent, children: [
+        {path: 'admin', component: AdminComponent}
+      ]
+    }
 ];
 
 @NgModule({

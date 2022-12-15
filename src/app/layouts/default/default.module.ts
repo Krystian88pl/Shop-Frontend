@@ -6,12 +6,14 @@ import { ProductComponent } from 'src/app/modules/product/product.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { LoginComponent } from 'src/app/modules/login/login.component';
 
 @NgModule({
   declarations: [
     DefaultComponent,
     HomeComponent,
     ProductComponent
+
   ],
   imports: [
     CommonModule,

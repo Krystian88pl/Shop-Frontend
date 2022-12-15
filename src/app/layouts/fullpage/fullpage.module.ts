@@ -16,6 +16,7 @@ import { LoginComponent } from 'src/app/modules/login/login.component';
     RouterModule,
     FlexLayoutModule,
     SharedModule
+
   ]
 })
 export class FullpageModule { }
